@@ -8,10 +8,10 @@ const Post = ({ username, shop, main, snack, drink, avatar }) => {
         <div className="avatar" style={{ backgroundImage: `url(${avatar})` }}>
           {" "}
         </div>
-        <span>{username}</span>
+        <span className="username">{username}</span>
       </div>
-
-      <span>{shop}</span>
+      
+      <span className="shop">{shop}</span>
       <span>{main}</span>
       <span>{snack}</span>
       <span>{drink}</span>
@@ -20,6 +20,12 @@ const Post = ({ username, shop, main, snack, drink, avatar }) => {
         className="post-image"
         src="https://i.inews.co.uk/content/uploads/2018/03/mealdealphoto.png"
       ></img>
+
+      <div className="reaction">
+        <span>Like (30)</span>
+        <span>Hate (57)</span>
+        <span>Comment</span>
+      </div>
     </div>
   );
 };

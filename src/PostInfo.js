@@ -4,9 +4,9 @@ export const PostInfo = [
         username: "Emmanuel",
         avatar: "https://pbs.twimg.com/profile_images/1508015682478354439/Tqw2zkDo_400x400.jpg",
         shop: "Sainsbury's",
-        main: "Ham & Cheese Sandwich",
-        snack: "Fridge Raiders",
-        drink: "Fanta Orange"
+        main: "Chicken Avocado & Bacon Sandwich",
+        snack: "Sunbites",
+        drink: "Tropical Juice"
 
     },
 
