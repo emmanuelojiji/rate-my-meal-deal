@@ -2,6 +2,7 @@ export const PostInfo = [
 
     {
         username: "Emmanuel",
+        avatar: "https://pbs.twimg.com/profile_images/1508015682478354439/Tqw2zkDo_400x400.jpg",
         shop: "Sainsbury's",
         main: "Ham & Cheese Sandwich",
         snack: "Fridge Raiders",
@@ -19,10 +20,10 @@ export const PostInfo = [
 
     {
         username: "Alvin",
-        shop: "Asda",
-        main: "Hoisin Duck Wrap",
-        snack: "Quavers",
-        drink: "Water"
+        shop: "Tesco",
+        main: "Sushi Pack",
+        snack: "Sensations",
+        drink: "Fanta Orange"
     }
 
 ]

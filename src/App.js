@@ -2,13 +2,16 @@ import './App.css';
 import Post from './Components/Post';
 import { PostInfo } from './PostInfo';
 
+
 function App() {
   return (
     <div className="App">
-     <h1>Rate My Ideal</h1>
+     <header>
+
+     </header>
 
     { PostInfo.map((info) => {
-      return <Post username={info.username}/>
+      return <Post username={info.username} avatar={info.avatar} shop={info.shop} main={info.main} snack={info.snack} drink={info.drink}/>
     }
     )}
 

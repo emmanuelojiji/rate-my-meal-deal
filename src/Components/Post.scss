@@ -1,6 +1,31 @@
-.post-container{
-    height: 300px;
-    width: 300px;
-    background-color: brown;
+.post-container {
+  width:100%;
+  padding-left: 5%;
+  padding-right: 5%;
+  /*background-color: lightgray;*/
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+
+  .post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .avatar {
+    height: 45px;
+    width: 45px;
+    border-radius: 500px;
+    margin-right: 12px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .post-image {
+    border-radius: 5px;
     margin-bottom: 30px;
+    margin-top: 20px;
+  }
 }
