@@ -10,7 +10,7 @@ const Post = ({ username, shop, main, snack, drink, avatar }) => {
         </div>
         <span className="username">{username}</span>
       </div>
-      
+
       <span className="shop">{shop}</span>
       <span>{main}</span>
       <span>{snack}</span>
@@ -24,7 +24,7 @@ const Post = ({ username, shop, main, snack, drink, avatar }) => {
       <div className="reaction">
         <span>Like (30)</span>
         <span>Hate (57)</span>
-        <span>Comment</span>
+        <span>Comments (33)</span>
       </div>
     </div>
   );
