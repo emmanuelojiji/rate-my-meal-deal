@@ -1,11 +1,11 @@
-import './Feed.scss'
+import "./Feed.scss";
 import { PostInfo } from "../PostInfo";
-import Post from '../Components/Post';
-import NavBar from '../Components/NavBar';
+import Post from "../Components/Post";
+import NavBar from "../Components/NavBar";
 
 const Feed = () => {
   return (
-    <>
+    <div className="Feed">
       <header></header>
 
       {PostInfo.map((info) => {
@@ -21,8 +21,8 @@ const Feed = () => {
         );
       })}
 
-      <NavBar/>
-    </>
+      <NavBar />
+    </div>
   );
 };
 
