@@ -1,21 +1,36 @@
-.Access{
-    padding-top: 30px;
-    width: 100%;
-    padding-left: 5%;
-    padding-right: 5%;
+.Access {
+  padding-top: 30px;
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
-.input-container{
-    display: flex;
-    flex-direction: column;
+.input-container {
+  display: flex;
+  flex-direction: column;
 
-    input{
-        margin-bottom: 20px;
-        height: 40px;
-        padding-left: 12px;
-    }
+  input {
+    margin-bottom: 20px;
+    height: 50px;
+    padding-left: 20px;
+    border-radius: 500px;
+    border: solid 1px lightgrey;
+  }
 }
 
-.access-title{
-    margin-bottom: 30px;
+.access-title {
+  margin-bottom: 30px;
+}
+
+.sign-container {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  height: 50px;
+  border-radius: 500px;
+  border: 0;
+  background: #389cff;
+  color: white;
 }

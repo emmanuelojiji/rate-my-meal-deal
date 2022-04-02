@@ -1,7 +1,16 @@
 .nav-bar{
     width: 100%;
     height: 70px;
-    background: brown;
+    background: lightgrey;
     position: fixed;
     bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a{
+        padding: 20px;
+        color: black;
+        text-decoration: none;
+    }
 }
