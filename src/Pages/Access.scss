@@ -1,0 +1,21 @@
+.Access{
+    padding-top: 30px;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+
+    input{
+        margin-bottom: 20px;
+        height: 40px;
+        padding-left: 12px;
+    }
+}
+
+.access-title{
+    margin-bottom: 30px;
+}
