@@ -8,6 +8,8 @@ import {
   updateProfile,
 } from "firebase/auth";
 
+import NavBar from "../Components/NavBar";
+
 import { db } from "../firebase-config";
 import { setDoc, doc } from "firebase/firestore";
 
@@ -71,6 +73,7 @@ const Access = () => {
 
   return (
     <>
+      <NavBar />
       {isLoading && <div className="loading">LOADING</div>}
 
       <div className="Access">
