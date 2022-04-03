@@ -7,9 +7,7 @@ import { Link } from "react-router-dom";
 const Feed = () => {
   return (
     <div className="Feed">
-      <header>
-        <Link to="/access">Access</Link>
-      </header>
+      <header></header>
 
       {PostInfo.map((info) => {
         return (
