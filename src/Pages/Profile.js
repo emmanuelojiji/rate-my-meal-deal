@@ -12,17 +12,19 @@ const Profile = () => {
   const signOut = () => {
     auth.signOut();
 
-    navigate('/')
+    navigate("/access");
   };
 
   return (
-    <div className="Profile">
-      <h1>Profile</h1>
-      <span>User: {auth.currentUser.email}</span>
+    <>
       <NavBar />
+      <div className="Profile">
+        <h1>Profile</h1>
+        <span>User: {auth.currentUser.displayName}</span>
 
-      <button onClick={signOut}>Log Out</button>
-    </div>
+        <button onClick={signOut}>Log Out</button>
+      </div>
+    </>
   );
 };
 
