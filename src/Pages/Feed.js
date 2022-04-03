@@ -2,11 +2,14 @@ import "./Feed.scss";
 import { PostInfo } from "../PostInfo";
 import Post from "../Components/Post";
 import NavBar from "../Components/NavBar";
+import { Link } from "react-router-dom";
 
 const Feed = () => {
   return (
     <div className="Feed">
-      <header></header>
+      <header>
+        <Link to="/access">Access</Link>
+      </header>
 
       {PostInfo.map((info) => {
         return (

@@ -1,8 +1,7 @@
 import "./App.css";
 import Post from "./Components/Post";
 import { useState } from "react";
-import { auth } from "./firebase-config";
-import {Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import Access from "./Pages/Access";
 import Feed from "./Pages/Feed";
