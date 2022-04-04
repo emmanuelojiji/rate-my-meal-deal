@@ -1,7 +1,13 @@
 import "./Post.scss";
 import { PostInfo } from "../PostInfo";
+import { useState, useEffect } from "react";
+import { collection, getDocs, query, where } from "firebase/firestore";
+import { db } from "../firebase-config";
 
-const Post = ({ username, shop, main, snack, drink, avatar }) => {
+
+const Post = ({ username, shop, main, snack, drink, avatar, image }) => {
+
+
   return (
     <div className="post-container">
       <div className="post-header">
@@ -18,7 +24,7 @@ const Post = ({ username, shop, main, snack, drink, avatar }) => {
 
       <img
         className="post-image"
-        src="https://i.inews.co.uk/content/uploads/2018/03/mealdealphoto.png"
+        src={image}
       ></img>
 
       <div className="reaction">

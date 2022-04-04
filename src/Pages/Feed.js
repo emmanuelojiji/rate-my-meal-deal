@@ -1,27 +1,42 @@
 import "./Feed.scss";
-import { PostInfo } from "../PostInfo";
 import Post from "../Components/Post";
 import NavBar from "../Components/NavBar";
 import { Link } from "react-router-dom";
+import { collection, query, where, getDocs } from "firebase/firestore";
+import { db } from "../firebase-config";
+import { useEffect } from "react";
+import { useState } from "react";
 
 const Feed = () => {
+  const [posts, setPosts] = useState([]);
+
+  const getPosts = async () => {
+    const querySnapshot = await getDocs(collection(db, "posts"));
+    const postsFromFirestore = [];
+    querySnapshot.forEach((doc) => {
+      postsFromFirestore.push(doc.data());
+    });
+
+    setPosts(postsFromFirestore);
+  };
+
+  useEffect(() => {
+    getPosts();
+  });
+
   return (
     <div className="Feed">
       <header></header>
 
-      {PostInfo.map((info) => {
-        return (
-          <Post
-            username={info.username}
-            avatar={info.avatar}
-            shop={info.shop}
-            main={info.main}
-            snack={info.snack}
-            drink={info.drink}
-          />
-        );
-      })}
-
+      {posts.map((post) => (
+        <Post
+          image={post.image}
+          shop={post.shop}
+          main={post.main}
+          snack={post.snack}
+          drink={post.drink}
+        />
+      ))}
       <NavBar />
     </div>
   );
