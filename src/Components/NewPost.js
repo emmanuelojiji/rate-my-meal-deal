@@ -4,7 +4,7 @@ import { collection, query, where, getDocs, addDoc } from "firebase/firestore";
 import { db } from "../firebase-config";
 import { getAuth } from "firebase/auth";
 
-const NewPost = ({ close }) => {
+const NewPost = ({ close, createPost  }) => {
   const [newShop, setNewShop] = useState("");
   const [newMain, setNewMain] = useState("");
   const [newSnack, setNewSnack] = useState("");
@@ -12,7 +12,7 @@ const NewPost = ({ close }) => {
   
   const auth = getAuth();
 
-  const createPost = async () => {
+  const sendPost = async () => {
     const docRef = await addDoc(collection(db, "posts"), {
       shop: newShop,
       main: newMain,

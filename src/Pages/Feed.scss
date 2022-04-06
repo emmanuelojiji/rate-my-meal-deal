@@ -1,10 +1,31 @@
 .Feed{
     width: 100%;
-    padding-top: 30px;
+    background: #eeeeee;
+
+
+header{
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: fixed;
+    background:white;
+    border-bottom: solid 1px #eeeeee;
+    h1{
+        font-size: 20px;
+    }
+}
+
+
 }
 
 .new-post-button{
     position: fixed;
     bottom: 100px;
     right: 5%;
+}
+
+.posts-wrap{
+    margin-top: 64px;
 }

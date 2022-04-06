@@ -18,8 +18,6 @@ const Feed = () => {
 
   const [newPostVisible, setNewPostVisible] = useState(false);
 
- 
-
   const getPosts = async () => {
     const querySnapshot = await getDocs(collection(db, "posts"));
     const postsFromFirestore = [];
@@ -36,7 +34,12 @@ const Feed = () => {
 
   return (
     <>
-      {newPostVisible && <NewPost close={() => setNewPostVisible(false)} />}
+      {newPostVisible && (
+        <NewPost
+          close={() => setNewPostVisible(false)}
+          createPost={() => setNewPostVisible(false)}
+        />
+      )}
       <button
         class="new-post-button"
         onClick={() => {
@@ -50,18 +53,22 @@ const Feed = () => {
         New Post
       </button>
       <div className="Feed">
-        <header></header>
+        <header>
+          <h1>Timeline</h1>
+        </header>
 
-        {posts.map((post) => (
-          <Post
-            username={post.username}
-            image={post.image}
-            shop={post.shop}
-            main={post.main}
-            snack={post.snack}
-            drink={post.drink}
-          />
-        ))}
+        <div className="posts-wrap">
+          {posts.map((post) => (
+            <Post
+              username={post.username}
+              image={post.image}
+              shop={post.shop}
+              main={post.main}
+              snack={post.snack}
+              drink={post.drink}
+            />
+          ))}
+        </div>
         <NavBar />
       </div>
     </>

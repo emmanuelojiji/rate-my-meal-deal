@@ -1,11 +1,14 @@
 .post-container {
   width:100%;
+  padding-top: 5%;
+  padding-bottom: 5%;
   padding-left: 5%;
   padding-right: 5%;
-  /*background-color: lightgray;*/
-  margin-bottom: 30px;
+  background-color: white;
+  margin-bottom: 10px;
   display: flex;
   flex-direction: column;
+  
 
 
   .post-header {
@@ -16,6 +19,7 @@
 
   .shop{
       margin-bottom: 12px;
+      font-weight: bold;
   }
 
   .username{
@@ -29,6 +33,7 @@
     margin-right: 12px;
     background-size: cover;
     background-position: center;
+    background: rgb(216, 216, 216);
   }
 
   .post-image {
