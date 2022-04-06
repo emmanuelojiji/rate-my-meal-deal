@@ -7,6 +7,8 @@ import { db } from "../firebase-config";
 
 const Post = ({ username, shop, main, snack, drink, avatar, image }) => {
 
+  
+
 
   return (
     <div className="post-container">
