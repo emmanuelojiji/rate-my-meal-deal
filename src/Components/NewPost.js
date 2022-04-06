@@ -4,7 +4,7 @@ import { collection, query, where, getDocs, addDoc } from "firebase/firestore";
 import { db } from "../firebase-config";
 import { getAuth } from "firebase/auth";
 
-const NewPost = ({ close, createPost  }) => {
+const NewPost = ({ close, closeNewPost  }) => {
   const [newShop, setNewShop] = useState("");
   const [newMain, setNewMain] = useState("");
   const [newSnack, setNewSnack] = useState("");
