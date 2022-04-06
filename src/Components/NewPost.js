@@ -51,7 +51,7 @@ const NewPost = ({ close, createPost  }) => {
         onChange={(e) => setNewDrink(e.target.value)}
       ></input>
 
-      <button onClick={createPost}>Create Post</button>
+      <button onClick={sendPost}>Create Post</button>
     </div>
   );
 };
